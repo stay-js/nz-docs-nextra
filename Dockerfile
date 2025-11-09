@@ -2,6 +2,8 @@ FROM node:24-alpine3.22
 
 WORKDIR /app
 
+ENV DOCS_ENV=dev
+
 RUN corepack enable pnpm
 
 COPY . .
